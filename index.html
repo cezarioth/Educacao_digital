@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Educação e Defesa Digital — Boas práticas e checklist</title>
+  <meta name="description" content="Guia prático de educação e defesa digital: dicas, checklist, recursos e ferramentas para proteger contas e privacidade." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" aria-hidden="false">
+        <div class="logo" aria-hidden="true">
+          <!-- simple SVG mark -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" fill="currentColor"></rect>
+            <path d="M7 12h10M7 8h6M7 16h6" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="site-title">Educação & Defesa Digital</h1>
+          <p class="site-tag">Boas práticas para proteger contas, dados e privacidade</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn-icon" aria-pressed="false" title="Alternar tema">Modo</button>
+        <nav class="top-nav" aria-label="menu principal">
+          <a href="#dicas">Dicas</a>
+          <a href="#checklist">Checklist</a>
+          <a href="#recursos">Recursos</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Proteja sua identidade digital com ações práticas e rápidas</h2>
+          <p class="lead">Este guia reúne recomendações diretas, um checklist interativo e recursos confiáveis para que você proteja suas contas agora mesmo.</p>
+          <a href="#checklist" class="btn primary">Verificar minhas contas</a>
+          <a href="#recursos" class="btn ghost">Ver recursos recomendados</a>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <h3>Checklist rápido</h3>
+          <p class="muted">Marque os itens que já foram verificados — o progresso será salvo no seu navegador.</p>
+          <div class="progress" aria-hidden="true"><i id="miniProgress"></i></div>
+          <ul class="mini-list">
+            <li>2FA ativo</li>
+            <li>Senha única</li>
+            <li>Recuperação configurada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="dicas" class="container section">
+      <h2>Dicas práticas e explicadas</h2>
+      <p class="subtitle">Princípios e passos que realmente reduzem risco — com porquês e como fazer.</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Gerenciador de senhas</h3>
+          <p>Use um gerenciador (ex.: Bitwarden, 1Password). Não reutilize senhas. Senhas longas (mín. 12 caracteres) e frases senha são melhores.</p>
+          <small class="muted">Como fazer: instale o gerenciador, importe senhas e gere uma senha única para cada conta.</small>
+        </article>
+
+        <article class="card">
+          <h3>Autenticação de dois fatores (2FA)</h3>
+          <p>Prefira apps autenticadores (Authy, Google Authenticator) ou chaves físicas (YubiKey). SMS é melhor que nada, mas menos seguro.</p>
+          <small class="muted">Dica: guarde códigos de recuperação em um local seguro (offline).</small>
+        </article>
+
+        <article class="card">
+          <h3>Phishing e links</h3>
+          <p>Verifique domínio (barra de endereço), desconfie de mensagens com urgência e nunca forneça códigos por telefone/email sem confirmar a origem.</p>
+        </article>
+
+        <article class="card">
+          <h3>Privacidade em redes sociais</h3>
+          <p>Revise quem vê suas postagens, remova dados sensíveis e limite a quantidade de informações pessoais públicas.</p>
+        </article>
+
+        <article class="card">
+          <h3>Backup e recuperação</h3>
+          <p>Faça backup local e na nuvem com versões — teste a restauração. Criptografia full-disk em dispositivos móveis/PCs ajuda contra acesso físico.</p>
+        </article>
+
+        <article class="card">
+          <h3>Segurança em Wi-Fi público</h3>
+          <p>Evite logins sensíveis; use VPN confiável para criptografar sua conexão. Confirme o nome correto da rede antes de conectar.</p>
+        </article>
+
+        <article class="card">
+          <h3>Atualizações e permissões</h3>
+          <p>Mantenha sistema, navegador e apps atualizados. Revise permissões (local, câmera, microfone) e remova aplicativos desnecessários.</p>
+        </article>
+
+        <article class="card">
+          <h3>Proteção contra ransomware</h3>
+          <p>Backups regulares + não executar anexos suspeitos. Configure controle de contas e evite executar programas de fontes desconhecidas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="checklist" class="container section alt">
+      <h2>Checklist detalhado</h2>
+      <p class="subtitle">Checklist categorizado que você pode marcar — o site salva e mostra o progresso.</p>
+
+      <div class="checklist-grid">
+        <div class="card">
+          <h3>Autenticação</h3>
+          <label class="check"><input type="checkbox" data-key="2fa" /> Ative 2FA em contas principais (e-mail, bancárias, redes sociais)</label>
+          <label class="check"><input type="checkbox" data-key="u2f" /> Considere chave de segurança (U2F) para contas críticas</label>
+          <label class="check"><input type="checkbox" data-key="recovery" /> Salve códigos de recuperação em local seguro</label>
+        </div>
+
+        <div class="card">
+          <h3>Senhas & gerenciamento</h3>
+          <label class="check"><input type="checkbox" data-key="pw_length" /> Senhas com ≥12 caracteres ou frase-senha</label>
+          <label class="check"><input type="checkbox" data-key="pw_unique" /> Não reutilizar senhas entre serviços</label>
+          <label class="check"><input type="checkbox" data-key="password_manager" /> Usar gerenciador de senhas</label>
+        </div>
+
+        <div class="card">
+          <h3>Dispositivos & rede</h3>
+          <label class="check"><input type="checkbox" data-key="updates" /> Sistema e apps atualizados</label>
+          <label class="check"><input type="checkbox" data-key="antivirus" /> Antivírus / proteção básica instalada</label>
+          <label class="check"><input type="checkbox" data-key="vpn" /> VPN em redes públicas quando necessário</label>
+        </div>
+
+        <div class="card">
+          <h3>Privacidade & contas</h3>
+          <label class="check"><input type="checkbox" data-key="sessions" /> Revogue sessões e dispositivos desconhecidos</label>
+          <label class="check"><input type="checkbox" data-key="apps" /> Revise apps e permissões conectadas</label>
+          <label class="check"><input type="checkbox" data-key="profile" /> Ajuste privacidade do perfil social</label>
+        </div>
+      </div>
+
+      <div class="check-actions">
+        <div class="progress large" aria-hidden="true"><i id="progressBar"></i></div>
+        <div class="progress-meta">
+          <span id="percentLabel">0% completo</span>
+          <div class="buttons">
+            <button id="resetBtn" class="btn ghost">Redefinir checklist</button>
+            <button id="printBtn" class="btn primary">Imprimir / Exportar</button>
+            <button id="exportBtn" class="btn">Exportar JSON</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="container section">
+      <h2>Recursos recomendados</h2>
+      <p class="subtitle">Ferramentas e guias confiáveis para aprofundar.</p>
+
+      <div class="resources-grid">
+        <div class="card">
+          <h4>Gerenciadores de senha</h4>
+          <ul>
+            <li>Bitwarden — código aberto, bom para usuários e equipes</li>
+            <li>1Password — recursos familiares e vaults compartilhados</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Verificação de vazamentos</h4>
+          <ul>
+            <li>haveibeenpwned — verifique e-mail comprometido</li>
+            <li>Firefox Monitor — alertas de vazamentos</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Autenticadores e chaves</h4>
+          <ul>
+            <li>Authy, Google Authenticator</li>
+            <li>YubiKey (para contas críticas)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Educação e guias</h4>
+          <ul>
+            <li>Guias do CERT (centros de resposta a incidentes)</li>
+            <li>Material de alfabetização digital para escolas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery-share" class="container section alt">
+      <h2>Compartilhar e coletar feedback</h2>
+      <p class="subtitle">Cole o link público do site ou adicione prints da galeria para registrar feedbacks.</p>
+
+      <div class="share-grid">
+        <div class="card">
+          <label for="shareLink">Link público do site</label>
+          <div class="share-input">
+            <input id="shareLink" type="url" placeholder="https://seusite.exemplo" />
+            <button id="genShare" class="btn">Gerar mensagem</button>
+          </div>
+          <div id="shareResult" class="share-result" aria-live="polite"></div>
+        </div>
+
+        <div class="card">
+          <h4>Galeria de prints</h4>
+          <div id="gallery" class="gallery-grid" aria-live="polite">
+            <div class="shot placeholder">Nenhuma imagem</div>
+          </div>
+
+          <div class="actions">
+            <input id="imgUpload" type="file" accept="image/*" style="display:none" />
+            <button id="addImg" class="btn">Adicionar print</button>
+            <button id="clearImg" class="btn ghost">Limpar galeria</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="container section">
+      <h2>Perguntas frequentes (FAQ)</h2>
+      <div class="faq-grid">
+        <details>
+          <summary>O que é 2FA e por que usar?</summary>
+          <p>2FA (autenticação de dois fatores) oferece uma camada extra além da senha: algo que você sabe (senha) + algo que você tem (código/app/chave).</p>
+        </details>
+
+        <details>
+          <summary>Como recuperar minha conta se perder o 2FA?</summary>
+          <p>Use códigos de recuperação salvos, contatos de confiança ou o suporte do serviço — mantenha sempre um método de recuperação atualizado.</p>
+        </details>
+
+        <details>
+          <summary>Preciso pagar por ferramentas de segurança?</summary>
+          <p>Existem excelentes ferramentas gratuitas e open-source; escolha conforme necessidade e nível de proteção desejado.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Educação & Defesa Digital — material de referência e orientação prática. Verifique políticas e termos de cada serviço antes de aplicar mudanças em contas críticas.</p>
+      <small class="muted">Conteúdo de caráter educacional — responsabilidade do usuário aplicar e testar as recomendações.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
