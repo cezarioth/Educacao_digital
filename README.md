@@ -1,132 +1,114 @@
-Educação e Defesa Digital – Documentação do Projeto
-Visão Geral
+📌 Projeto Educação e Defesa Digital
 
-Este mini projeto foi desenvolvido com o objetivo de apresentar, de forma simples e acessível, conceitos essenciais de educação digital, além de boas práticas de segurança e defesa online.
-O site reúne dicas rápidas, checklist de proteção e seções informativas para conscientização de usuários iniciantes ou intermediários sobre como manter suas contas e dispositivos seguros.
+Sistema desenvolvido com foco em conscientização, orientação prática e prevenção de riscos no ambiente digital.
+O objetivo é fornecer um ambiente simples, acessível e claro, onde qualquer usuário possa entender como fortalecer sua segurança online.
 
-A estrutura é leve, totalmente em HTML, CSS e JavaScript puro, permitindo fácil personalização e compatibilidade com qualquer navegador.
+👥 Equipe de Desenvolvimento
+Nome Completo	Função / Responsabilidade Principal
+Thiago Cezario	Desenvolvedor Frontend / Author do Projeto
+[Adicionar membros se quiser]	
+📖 Descrição do Projeto
 
-Objetivos do Projeto
+O site Educação e Defesa Digital é uma aplicação estática construída em HTML, CSS e JavaScript, projetada para informar e auxiliar usuários na adoção de boas práticas de segurança digital.
+Ele apresenta dicas rápidas, checklist de proteção, exemplos de ameaças comuns e orientações sobre como navegar de maneira mais segura na internet.
 
-Reforçar a importância da segurança digital no cotidiano.
+O propósito principal é promover a educação digital e ensinar usuários a identificar riscos, agir preventivamente e fortalecer sua segurança pessoal online.
 
-Educar usuários sobre práticas básicas de defesa online.
+🛡️ Funcionalidades Principais
+✔️ Dicas rápidas de segurança
 
-Centralizar orientações rápidas e facilmente compartilháveis.
+Senhas fortes e únicas
 
-Criar uma página simples para apresentação acadêmica ou institucional.
+Autenticação em dois fatores
 
-Servir como base para projetos maiores e mais complexos no futuro.
+Phishing e engenharia social
 
-Funcionalidades Implementadas
-1. Dicas Rápidas de Segurança
+Cuidados com redes públicas
 
-O site inclui uma seção com recomendações práticas, como:
+Atualizações e patches
 
-Utilização de senhas fortes e únicas.
+Verificação de links suspeitos
 
-Ativação da autenticação em dois fatores (2FA).
+✔️ Checklist interativo
 
-Reconhecimento de tentativas de phishing.
+Confirmação de e-mail e telefone
 
-Cuidados com redes Wi-Fi públicas.
+Revisão de dispositivos conectados
 
-Verificação de links suspeitos antes de clicar.
+Backup ativado
 
-Atualização periódica de sistemas e aplicativos.
+Privacidade ajustada
 
-2. Checklist de Verificação de Conta
+Senha atualizada
 
-Uma lista organizada ajuda o usuário a validar rapidamente sua postura de segurança, incluindo:
+Autorização de aplicativos externos
 
-Senha atualizada recentemente.
+✔️ Seções Educacionais
 
-Backup ativado.
+Importância da segurança digital
 
-Revisão de dispositivos conectados.
+Principais ameaças
 
-Confirmação de e-mail e telefone.
+Como agir preventivamente
 
-Privacidade configurada corretamente.
+✔️ Interatividade JavaScript
 
-Autorização de aplicativos de terceiros revisada.
+Alertas educativos
 
-3. Conteúdo Educacional
+Lista dinâmica de ameaças
 
-Cada seção explica de forma objetiva:
+Marcação visual do checklist
 
-Por que a segurança digital importa.
-
-Principais ameaças enfrentadas no dia a dia.
-
-Como cada usuário pode se proteger com ações simples.
-
-4. Interatividade (JavaScript)
-
-O JavaScript adiciona pequenas interações ao site, como:
-
-Exibição de uma lista dinâmica de ameaças digitais.
-
-Feedback visual ao marcar itens do checklist.
-
-Comportamento responsivo e melhor experiência do usuário.
-
-5. Layout Responsivo
-
-O design foi construído seguindo padrões mobile-first, garantindo boa visualização em smartphones e PCs.
-
-Estrutura do Projeto
+📂 Estrutura do Projeto
 projeto-educacao-defesa-digital/
 │
-├── index.html            # Estrutura principal do site
+├── index.html
 │
 ├── assets/
 │   ├── css/
-│   │   └── style.css     # Estilos e responsividade
+│   │   └── style.css
+│   │
 │   ├── js/
-│   │   └── script.js     # Funções interativas
-│   └── img/              # Imagens, ícones e banners
+│   │   └── script.js
+│   │
+│   └── img/
+│       └── (imagens do site)
 │
 └── docs/
-    └── readme.md         # Documentação do projeto
+    └── readme.md
 
-Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas
 
-HTML5 – Estrutura semântica
+HTML5
 
-CSS3 – Estilização e responsividade
+CSS3
 
-JavaScript Vanilla – Interatividade
+JavaScript Vanilla
 
-Padrão Mobile-First – Foco em acessibilidade
+Estrutura mobile-first
 
-Arquitetura estática – Fácil hospedagem e portabilidade
+Arquitetura estática (compatível com GitHub Pages, Netlify, Vercel etc.)
 
-Como Executar o Projeto
+🚀 Como Executar
 
-Faça o download do projeto ou clone o repositório.
+Baixe ou clone o repositório.
 
-Abra a pasta no VSCode ou editor de preferência.
+Abra a pasta no VSCode.
 
-Utilize o Live Server ou simplesmente abra o arquivo index.html no navegador.
+Execute index.html no navegador ou use o plugin Live Server.
 
-Navegue pelo conteúdo e teste as interações.
+Navegue pelo conteúdo e teste o checklist.
 
-Possíveis Extensões Futuras
+📈 Possíveis Melhorias Futuras
 
-Modo escuro (dark mode).
+Dark mode
 
-Tradução para inglês e espanhol.
+Página sobre golpes digitais reais
 
-Nova página sobre golpes digitais mais comuns.
+Quiz interativo de segurança
 
-Implementação de quizzes de segurança.
+Sistema de login para salvar checklist
 
-Integração com backend para coleta de feedback real.
+Internacionalização (i18n)
 
-Versão adaptada para Wix, Canva e WordPress.
-
-Licença
-
-Projeto livre para uso acadêmico, demonstrativo e educacional.
-Modificações são permitidas e incentivadas.
+Versão adaptada para Wix / Canva
